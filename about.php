@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>賴建良簡介</title>
+	<style type="text/css">
+		* { font-family:"標楷體"; margin-left:auto; margin-right:auto;}
+		h1 {color:blue; font-size:60px;}
+		h2 {color:purple; font-size:40px;}
+	</style>
+	<script>
+		function change1() {
+  			document.getElementById("pic").src = "20250319_180642.jpg";
+  			document.getElementById("h2text").innerText = "靜宜資管";
+		}
+
+		function change2() {
+  			document.getElementById("pic").src = "20230805_185319.jpg";
+  			document.getElementById("h2text").innerText = "Winter";
+		}
+	</script>
+</head>
+<body>
+	<table width="40%">
+		<tr>
+			<td>
+	            <img src="20230805_185319.jpg"width="60%" id="pic" onmouseover="change1()" onmouseout="change2()"></img>
+	        </td>
+
+	        <td>
+            	<h1>賴建良</h1>
+	            <h2 id="h2text">Winter</h2>
+	        </td>
+		</tr>
+	</table>
+	<table width="40%" border="1">
+		<tr>
+			<td>
+	個人網頁：<br>
+	FB：<a href="https://www.facebook.com/lai.jian.liang.174377" target="_blank">https://www.facebook.com/lai.jian.liang.174377</a><br>
+	Instagram: <a href="https://www.instagram.com/winter_a.t/">winter_a.t</a><br>
+	Tel: <a href="tel:0988051934">0988051934</a><br>
+	E-Mail: <a href="mailto:a0988051934lai@gmail.com">a0988051934lai@gmail.com</a><br>
+    </td>
+    <td>
+	非常好音樂<br>
+	<audio controls>
+		<source src="Nobody.mp3" type="audio/mP3">
+	</audio><br>
+	</td>
+
+	<td>
+	賈斯汀比伯<br>
+	<iframe src="https://www.youtube.com/embed/Zd8bNW4DG5E" allowfullscreen></iframe>
+	</td>
+	</tr>
+	</table>
+	<?php echo date("Y-m-d")?>
+</body>
+</html>
